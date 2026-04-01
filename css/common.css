@@ -81,7 +81,7 @@ img {
   }
 }
 
-.visually-hidden {
+.sr-only {
   position: absolute;
   white-space: nowrap;
   width: 1px;
