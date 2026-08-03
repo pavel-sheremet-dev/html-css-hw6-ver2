@@ -5,22 +5,19 @@
 
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/hero-mobile.jpg);
+    image-set(
+      url(../images/hero-mobile.jpg) 1x,
+      url(../images/hero-mobile@2x.jpg) 2x
+    );
+
+  /* або без url */
+  /* background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    image-set('../images/hero-mobile.jpg' 1x, '../images/hero-mobile@2x.jpg' 2x); */
   background-color: #2e2f42;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx),
-  screen and (min-resolution: 2x) {
-  .section-hero {
-    background-image:
-      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/hero-mobile@2x.jpg);
-  }
 }
 
 .hero-title {
@@ -65,18 +62,15 @@
 
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/hero-tablet.jpg);
-  }
+      image-set(
+        url(../images/hero-tablet.jpg) 1x,
+        url(../images/hero-tablet@2x.jpg) 2x
+      );
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx),
-    screen and (min-resolution: 2x) {
-    .section-hero {
-      background-image:
-        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/hero-tablet@2x.jpg);
-    }
+    /* або без url */
+    /* background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    image-set('../images/hero-tablet.jpg' 1x, '../images/hero-tablet@2x.jpg' 2x); */
   }
 
   .hero-title {
@@ -96,18 +90,15 @@
 
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/hero-desktop.jpg);
-  }
+      image-set(
+        url(../images/hero-desktop.jpg) 1x,
+        url(../images/hero-desktop@2x.jpg) 2x
+      );
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx),
-    screen and (min-resolution: 2x) {
-    .section-hero {
-      background-image:
-        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/hero-desktop@2x.jpg);
-    }
+    /* або без url */
+    /* background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    image-set('../images/hero-desktop.jpg' 1x, '../images/hero-desktop@2x.jpg' 2x); */
   }
 
   .hero-title {
